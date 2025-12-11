@@ -1,0 +1,8 @@
+﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
+CREATE OR REPLACE DATASOURCE DF request_logs
+    FOLDER = '/1 - connectivity/1 - data sources'
+    ROUTE LOCAL 'LocalConnection' '${databases.http.folder.1 - connectivity.folder.1 - data sources.datasources.df.request_logs.ROUTE.LOCAL.PATH}' FILENAMEPATTERN = ''
+    TUPLEPATTERN = '^(\S+) \S+ \S+ \[([^\]]+)\] "(\S+) (\S+) \S+" (\d{{3}}) (\S+)$$'
+    ENDOFLINEDELIMITER = '\n'
+    HEADER = FALSE;
+
