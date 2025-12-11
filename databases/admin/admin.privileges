@@ -1,0 +1,6 @@
+ALTER USER denodo
+GRANT CONNECT ON admin;
+
+ALTER USER new_user2
+GRANT CONNECT ON admin;
+
