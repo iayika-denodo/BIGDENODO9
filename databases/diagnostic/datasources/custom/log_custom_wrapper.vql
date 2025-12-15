@@ -1,0 +1,4 @@
+﻿CREATE OR REPLACE DATASOURCE CUSTOM log_custom_wrapper
+    CLASSNAME='com.denodo.dashboard.connect.log.LogCustomWrapper'
+    CLASSPATH='C:\Users\IkemonsoAyika\BigDenodo9\DenodoPlatform9.0\lib\dmt\denodo-dmt-log-customwrapper.jar';
+

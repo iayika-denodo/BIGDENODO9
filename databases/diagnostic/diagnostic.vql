@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE DATABASE diagnostic 'Database managed by the Diagnostic & Monitoring Tool.';
+
+ALTER DATABASE diagnostic
+  CHARSET RESTRICTED;
+

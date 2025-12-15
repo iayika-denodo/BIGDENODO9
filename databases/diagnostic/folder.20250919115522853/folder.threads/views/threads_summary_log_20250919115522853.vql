@@ -1,0 +1,2 @@
+﻿CREATE OR REPLACE VIEW threads_summary_log_20250919115522853 FOLDER = '/20250919115522853/threads' AS SELECT count_threads(thread_dump_as_text) AS threads_count, count_threads(deadlock_thread_dump_as_text) AS deadlock_threads_count, round(((len(thread_dump_as_text)-len(replace(lower(thread_dump_as_text), '"access(', '')))/len('"access('))) AS query_threads_count, date FROM threads_instant_log_20250919115522853 WHERE cw_search_start_date = to_timestamptz('yyyy-MM-dd', '1970-01-01') CONTEXT ('I18N' = 'rfc_restful');
+

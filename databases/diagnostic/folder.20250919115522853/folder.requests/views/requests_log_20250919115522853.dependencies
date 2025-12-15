@@ -1,0 +1,8 @@
+﻿*/databases/diagnostic/folder.20250919115522853/20250919115522853.vql
+1/databases/diagnostic/folder.20250919115522853/folder.requests/requests.vql
+*/databases/diagnostic/folder.20250919115522853/folder.requests/requests.vql
+*/databases/diagnostic/folder.20250919115522853/folder.requests/folder.intermediate_views/intermediate_views.vql
+*/databases/diagnostic/datasources/custom/log_custom_wrapper.vql
+*/databases/diagnostic/folder.20250919115522853/folder.requests/folder.intermediate_views/views/requests_instant_log_20250919115522853.vql
+1/databases/diagnostic/folder.20250919115522853/folder.requests/folder.intermediate_views/views/requests_interval_log_20250919115522853.vql
+*/databases/diagnostic/folder.20250919115522853/folder.requests/folder.intermediate_views/views/requests_interval_log_20250919115522853.vql
