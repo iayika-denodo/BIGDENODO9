@@ -1,0 +1,9 @@
+﻿CREATE OR REPLACE VIEW iv_cars_test FOLDER = '/integration' AS SELECT bv_cars.id AS id, bv_cars.make AS make, bv_cars.model AS model, bv_cars.body_type AS body_type, bv_cars.price AS price FROM bv_cars;
+
+ALTER VIEW iv_cars_test
+ LAYOUT (bv_cars = [20, 20, 200, 200]);
+
+ALTER VIEW iv_cars_test
+ CACHE FULL
+     BATCHSIZEINCACHE DEFAULT TIMETOLIVEINCACHE DEFAULT;
+
