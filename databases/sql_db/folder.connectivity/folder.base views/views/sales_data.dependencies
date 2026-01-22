@@ -1,0 +1,4 @@
+﻿*/databases/sql_db/folder.connectivity/connectivity.vql
+1/databases/sql_db/folder.connectivity/folder.base views/base views.vql
+*/databases/sql_db/folder.connectivity/folder.data sources/data sources.vql
+1/databases/sql_db/folder.connectivity/folder.data sources/datasources/jdbc/my_testie.vql

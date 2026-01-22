@@ -1,10 +1,10 @@
 ﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
 CREATE OR REPLACE DATASOURCE JDBC my_testie
-    FOLDER = '/1 - connectivity/1 - data sources'
+    FOLDER = '/connectivity/data sources'
     DRIVERCLASSNAME = 'com.mysql.jdbc.Driver'
-    DATABASEURI = '${databases.sql_db.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.my_testie.DATABASEURI}'
-    USERNAME = '${databases.sql_db.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.my_testie.USERNAME}'
-    USERPASSWORD = '${databases.sql_db.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.my_testie.USERPASSWORD}' ${databases.sql_db.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.my_testie.USERPASSWORD.ENCRYPTED}
+    DATABASEURI = '${databases.sql_db.folder.connectivity.folder.data sources.datasources.jdbc.my_testie.DATABASEURI}'
+    USERNAME = '${databases.sql_db.folder.connectivity.folder.data sources.datasources.jdbc.my_testie.USERNAME}'
+    USERPASSWORD = '${databases.sql_db.folder.connectivity.folder.data sources.datasources.jdbc.my_testie.USERPASSWORD}' ${databases.sql_db.folder.connectivity.folder.data sources.datasources.jdbc.my_testie.USERPASSWORD.ENCRYPTED}
     CLASSPATH = 'mysql9'
     DATABASENAME = 'Generic'
     DATABASEVERSION = ''

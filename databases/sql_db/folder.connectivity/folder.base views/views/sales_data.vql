@@ -1,8 +1,8 @@
 ﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
 CREATE OR REPLACE WRAPPER JDBC sales_data
-    FOLDER = '/1 - connectivity/2 - base views'
+    FOLDER = '/connectivity/base views'
     DATASOURCENAME=my_testie
-    CATALOGNAME='${databases.sql_db.folder.1 - connectivity.folder.2 - base views.views.jdbc.sales_data.CATALOGNAME}' 
+    CATALOGNAME='${databases.sql_db.folder.connectivity.folder.base views.views.jdbc.sales_data.CATALOGNAME}' 
     RELATIONNAME='sales_data' 
     OUTPUTSCHEMA (
         sales_id = 'sales_id' :'java.lang.Integer' (OPT) (sourcetyperadix='10', sourcetypesize='10', description='', sourcetypeid='4', sourcetypename='INT')  NOT NULL SORTABLE IS_AUTOINCREMENT,
@@ -19,7 +19,7 @@ CREATE OR REPLACE TABLE sales_data I18N us_cst (
         sale_date:localdate (notnull, sourcetypeid = '91', sourcetyperadix = '10', sourcetypesize = '10', description = ''),
         price:decimal (notnull, sourcetypeid = '3', sourcetyperadix = '10', sourcetypedecimals = '2', sourcetypesize = '10', description = '')
     )
-    FOLDER = '/1 - connectivity/2 - base views'
+    FOLDER = '/connectivity/base views'
     CONSTRAINT 'PRIMARY' PRIMARY KEY ( 'sales_id' , 'car_id' )
     CACHE OFF
     TIMETOLIVEINCACHE DEFAULT
