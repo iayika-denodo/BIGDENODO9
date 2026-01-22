@@ -1,0 +1,11 @@
+﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
+CREATE OR REPLACE DATASOURCE JSON ur_mom
+    ROUTE HTTP 'http.ApacheHttpClientConnection,120000' GET '${databases.admin.datasources.json.ur_mom.ROUTE.HTTP.URL}'
+    CHECKCERTIFICATES
+    GENERATE_OUTPUT_ON_EMPTY_CONTENT
+    AUTHENTICATION BASIC ( 
+      USER '${databases.admin.datasources.json.ur_mom.ROUTE.HTTP.USER}'
+      PASSWORD '${databases.admin.datasources.json.ur_mom.ROUTE.HTTP.PASSWORD}' ${databases.admin.datasources.json.ur_mom.ROUTE.HTTP.PASSWORD.ENCRYPTED} )
+    PROXY OFF
+    CHARSET = 'UTF-8';
+

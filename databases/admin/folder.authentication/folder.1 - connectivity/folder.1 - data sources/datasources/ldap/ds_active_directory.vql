@@ -1,9 +1,0 @@
-﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
-CREATE OR REPLACE DATASOURCE LDAP ds_active_directory
-    FOLDER = '/authentication/1 - connectivity/1 - data sources'
-    URI='${databases.admin.folder.authentication.folder.1 - connectivity.folder.1 - data sources.datasources.ldap.ds_active_directory.URI}'
-    USERNAME='${databases.admin.folder.authentication.folder.1 - connectivity.folder.1 - data sources.datasources.ldap.ds_active_directory.USERNAME}'
-    USERPASSWORD='${databases.admin.folder.authentication.folder.1 - connectivity.folder.1 - data sources.datasources.ldap.ds_active_directory.USERPASSWORD}' ${databases.admin.folder.authentication.folder.1 - connectivity.folder.1 - data sources.datasources.ldap.ds_active_directory.USERPASSWORD.ENCRYPTED}
-    USEPAGING=FALSE
-    POOL_ENABLED = TRUE;
-
