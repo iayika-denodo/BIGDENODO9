@@ -1,5 +1,0 @@
-﻿CREATE OR REPLACE VIEW threads_log_20250919115522853 FOLDER = '/20250919115522853/threads' (
-    stack_trace (sourcetypeid = '2005')
- )
- AS SELECT date, name, id, lock_object, lock_owner_id, lock_owner_name, previous_cpu_time, cpu_time, elapsed_cpu_time, elapsed_time, cpu_usage, in_native, suspended, in_deadlock, state, (stack_trace||'') AS stack_trace FROM FLATTEN parsed_threads_instant_log_20250919115522853 AS v ( v.thread_dump) CONTEXT ('I18N' = 'rfc_restful');
-
