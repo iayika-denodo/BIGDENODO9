@@ -5,9 +5,9 @@ CREATE OR REPLACE DATASOURCE JDBC ds_denodo
     DATABASEURI = '${databases.postgres.folder.connectivity.folder.data sources.datasources.jdbc.ds_denodo.DATABASEURI}'
     USERNAME = '${databases.postgres.folder.connectivity.folder.data sources.datasources.jdbc.ds_denodo.USERNAME}'
     USERPASSWORD = '${databases.postgres.folder.connectivity.folder.data sources.datasources.jdbc.ds_denodo.USERPASSWORD}' ${databases.postgres.folder.connectivity.folder.data sources.datasources.jdbc.ds_denodo.USERPASSWORD.ENCRYPTED}
-    CLASSPATH = 'postgresql-12'
+    CLASSPATH = 'postgresql-17'
     DATABASENAME = 'postgresql'
-    DATABASEVERSION = '12'
+    DATABASEVERSION = '17'
     FETCHSIZE = 1000
     VALIDATIONQUERY = 'Select 1'
     INITIALSIZE = 4
@@ -27,5 +27,6 @@ CREATE OR REPLACE DATASOURCE JDBC ds_denodo
     KERBEROSPROPERTIES ('jaasLogin'='false', 'user'='<user>')
     DATA_LOAD_CONFIGURATION (
         BATCHINSERTSIZE = 200
+        TARGET_SCHEMA = '${databases.postgres.folder.connectivity.folder.data sources.datasources.jdbc.ds_denodo.TARGET_SCHEMA}'
     );
 
