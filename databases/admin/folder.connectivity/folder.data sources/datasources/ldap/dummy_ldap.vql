@@ -1,0 +1,9 @@
+﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
+CREATE OR REPLACE DATASOURCE LDAP dummy_ldap
+    FOLDER = '/connectivity/data sources'
+    URI='${databases.admin.folder.connectivity.folder.data sources.datasources.ldap.dummy_ldap.URI}'
+    USERNAME='${databases.admin.folder.connectivity.folder.data sources.datasources.ldap.dummy_ldap.USERNAME}'
+    USERPASSWORD='${databases.admin.folder.connectivity.folder.data sources.datasources.ldap.dummy_ldap.USERPASSWORD}' ${databases.admin.folder.connectivity.folder.data sources.datasources.ldap.dummy_ldap.USERPASSWORD.ENCRYPTED}
+    USEPAGING=FALSE
+    POOL_ENABLED = TRUE;
+
